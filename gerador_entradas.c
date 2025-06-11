@@ -81,7 +81,7 @@ int main() {
     // Criar diretório se não existir
     criar_diretorio("entradas");
 
-    int tamanhos[] = {1000, 10000, 100000, 500000, 1000000};
+    int tamanhos[] = {1000000, 2000000, 3000000, 4000000, 5000000};
     const char *tipos[] = {"sorted", "random", "reverse"};
     int num_tamanhos = sizeof(tamanhos)/sizeof(tamanhos[0]);
     int num_tipos = sizeof(tipos)/sizeof(tipos[0]);
