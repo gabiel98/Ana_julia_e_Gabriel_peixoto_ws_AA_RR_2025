@@ -68,6 +68,10 @@ Gráficos gerados na pasta graficos/:
 
 ## Insights dos Resultados
 
+| Algoritmo      | Melhor Caso | Pior Caso  | Espaço | Estável |
+| -------------- | ----------- | ---------- | ------ | ------- |
+| Insertion Sort | O(n)        | O(n²)      | O(1)   | Sim     |
+| Merge Sort     | O(n log n)  | O(n log n) | O(n)   | Sim     |
 
 
 ## Autores
