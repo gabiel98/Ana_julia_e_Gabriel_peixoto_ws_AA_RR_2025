@@ -52,8 +52,7 @@ Implementar e analisar o algoritmo de ordenação Insertion Sort, avaliando-o co
    python graficos/graficos.py
 
 ## Ambiente de Execução
-Os testes foram executados em um ambiente contendo Sistema Operacional
-Windows 11 Home 64 bits. Nossa plataforma de testes foi um computador com processador 
+Os testes foram executados em um ambiente contendo Sistema Operacional Windows 11 Pro 64 bits. Nossa plataforma de testes foi um Notebook Lenovo Gamer 3i 82CG0005BR, processador de 7º geração Intel Core i7-10750H de 2.60GHz até 5.00GHz, placa de vídeo NVidia Geforce GTX1650 de 4GB GDDR6, memória RAM de 8GB DDR4, SSD de 512GB, tela de 15.6 polegadas.
 
 ## Saída
 
@@ -76,6 +75,51 @@ Gráficos gerados na pasta graficos/graficos_tempo_estimado:
 ## Análise Iterativa da Complexidade
 
 ### Merge Sort
+
+#### Pseudocódigo simplificado:
+
+```c
+Função MERGE_SORT(arr, l, r, comparacoes):
+    Se l < r:
+        m ← l + (r - l) / 2
+        MERGE_SORT(arr, l, m, comparacoes)
+        MERGE_SORT(arr, m + 1, r, comparacoes)
+        MERGE(arr, l, m, r, comparacoes)
+
+Função MERGE(arr, l, m, r, comparacoes):
+    n1 ← m - l + 1
+    n2 ← r - m
+
+    Criar vetores L[0...n1-1] e R[0...n2-1]
+
+    Para i de 0 até n1 - 1:
+        L[i] ← arr[l + i]
+
+    Para j de 0 até n2 - 1:
+        R[j] ← arr[m + 1 + j]
+
+    i ← 0, j ← 0, k ← l
+
+    Enquanto i < n1 e j < n2:
+        comparacoes ← comparacoes + 1
+        Se L[i] ≤ R[j]:
+            arr[k] ← L[i]
+            i ← i + 1
+        Senão:
+            arr[k] ← R[j]
+            j ← j + 1
+        k ← k + 1
+
+    Enquanto i < n1:
+        arr[k] ← L[i]
+        i ← i + 1
+        k ← k + 1
+
+    Enquanto j < n2:
+        arr[k] ← R[j]
+        j ← j + 1
+        k ← k + 1
+```
 
 #### Recorrência:
 
