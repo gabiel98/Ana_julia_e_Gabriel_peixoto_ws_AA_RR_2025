@@ -3,7 +3,7 @@
 ## Objetivo
 Implementar e analisar o algoritmo de ordenação Insertion Sort, avaliando-o com base em:
 - Tempo de execução
-- 
+- Tamanho da entrada
 
 ## Algoritmos Implementados
 - Insertion Sort
@@ -20,12 +20,12 @@ Implementar e analisar o algoritmo de ordenação Insertion Sort, avaliando-o co
 - Algoritmos :
      - insertion_sort.c
      - merge_sort.c
-- Entradas : Entradas geradas como sorted, random e reverse entre 1000, 10000, 100000, 500000, 1000000;
+- Entradas : Entradas geradas como sorted, random e reverse entre 1000, 10000, 100000, 500000, 1000000, 2000000, 3000000;
 - Graficos :
      - graficos.py : Codigo para criação dos graficos.
      - resultados_graficos : Primeiro arquivo de teste
 - Resultados:
-     - resultados.csv : Rewsultados
+     - resultados.csv : Resultados
 - Utils:
      - gerar_entradas.c : Gerador de entradas
      - medir_performance.c : Medir a Performance
@@ -53,8 +53,7 @@ Implementar e analisar o algoritmo de ordenação Insertion Sort, avaliando-o co
 
 ## Ambiente de Execução
 Os testes foram executados em um ambiente contendo Sistema Operacional
-Windows 11 Home 64 bits. Nossa plataforma de testes foi um computador com processador Processador AMD Ryzen 5 5600, 3.5GHz (4.4GHz Turbo), 6-Cores 12-Threads,
-Memória DDR4, 16GB, 3733Mhz, SSD 500GB Leitura 4800MBs e Gravação 2700MBs e Placa de Vídeo MSI NVIDIA GeForce RTX 3060 VENTUS 2X OC, LHR, 12GB GDDR6, DLSS, Ray Tracing.
+Windows 11 Home 64 bits. Nossa plataforma de testes foi um computador com processador 
 
 ## Saída
 
@@ -68,9 +67,9 @@ Gráficos gerados na pasta graficos/:
 
 ## Insights dos Resultados
 
-## 📊 Análise Iterativa da Complexidade
+## Análise Iterativa da Complexidade
 
-### 🔹 Merge Sort
+### Merge Sort
 
 #### Recorrência:
 
@@ -79,7 +78,9 @@ T(n) = 2T\left(\frac{n}{2}\right) + cn
 $$
 
 
-### ✅ Iterando a Recorrência:
+### Iterando a Recorrência:
+
+***Não esta responsivo no celular***
 
 1. **1ª iteração:**
 
@@ -113,14 +114,14 @@ $$
 
 
 
-### 📌 Conclusão:
+### Conclusão:
 
 * **Melhor caso:** $O(n \log n)$
 * **Pior caso:** $O(n \log n)$
   *(igual, pois o algoritmo sempre executa o mesmo número de divisões e mesclagens)*
 
 
-### 🔸 Insertion Sort
+### Insertion Sort
 
 #### Pseudocódigo simplificado:
 
@@ -137,7 +138,7 @@ for (int i = 1; i < n; i++) {
 ```
 
 
-### ✅ Pior Caso (vetor decrescente)
+### Pior Caso (vetor decrescente)
 
 Cada elemento precisa ser comparado e movido por todo o subvetor anterior:
 
@@ -151,7 +152,7 @@ T(n) = 1 + 2 + 3 + \dots + (n - 1) = \sum_{i=1}^{n-1} i = \frac{n(n - 1)}{2}
 $$
 
 
-### ✅ Melhor Caso (vetor ordenado)
+### Melhor Caso (vetor ordenado)
 
 O `while (arr[j] > chave)` nunca entra, então só há uma comparação por iteração:
 
@@ -160,7 +161,7 @@ T(n) = n - 1
 $$
 
 
-### 📌 Conclusão:
+### Conclusão:
 
 * **Melhor caso:** $O(n)$
 * **Pior caso:** $O(n^2)$
