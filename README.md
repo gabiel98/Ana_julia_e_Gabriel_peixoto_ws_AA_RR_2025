@@ -68,13 +68,7 @@ Gráficos gerados na pasta graficos/:
 
 ## Insights dos Resultados
 
-
-Claro! Abaixo está o **cálculo completo da função de custo por iteração**, para **Merge Sort** e **Insertion Sort**, incluindo **melhor e pior caso**, escrito em Markdown, pronto para o `README.md`.
-
----
-
 ## 📊 Análise Iterativa da Complexidade
-
 
 ### 🔹 Merge Sort
 
@@ -84,13 +78,6 @@ $$
 T(n) = 2T\left(\frac{n}{2}\right) + cn
 $$
 
----
-
-Claro! O erro está na formatação do LaTeX no Markdown — ele deve ser feito com crases triplas para blocos de código ou com `\(` e `\)` para inline, e `\[...\]` para blocos.
-
-Aqui está a correção ideal para o seu README.md, com a iteração da recorrência formatada corretamente:
-
----
 
 ### ✅ Iterando a Recorrência:
 
@@ -185,8 +172,6 @@ $$
 | ------------------ | ------------- | ------------- | ------------- |
 | **Insertion Sort** | $O(n)$        | $O(n^2)$      | $O(n^2)$      |
 | **Merge Sort**     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ |
-
----
 
 
 | Algoritmo      | Melhor Caso | Pior Caso          | Comparações   | Complexidade                             |
