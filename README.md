@@ -72,6 +72,42 @@ Gráficos gerados na pasta graficos/graficos_tempo_estimado:
 
 ## Insights dos Resultados
 
+
+### Tempo Estimado – Vetor Ordenado
+
+* **Insertion Sort** apresentou desempenho significativamente melhor nesse cenário.
+* Como esperado, no **melhor caso**, o `Insertion Sort` executa apenas comparações mínimas, com custo linear $O(n)$.
+* Já o **Merge Sort**, mesmo com o vetor ordenado, mantém sua complexidade $O(n \log n)$, já que realiza chamadas recursivas e mesclagens de qualquer forma.
+* Portanto, **para vetores ordenados**, o `Insertion Sort` é mais eficiente em tempo e recurso.
+
+---
+
+### Tempo Estimado – Vetor em Ordem Decrescente
+
+* **Insertion Sort** teve o pior desempenho possível, com crescimento exponencial de tempo. Isso confirma sua complexidade $O(n^2)$ no pior caso.
+* Já o **Merge Sort** manteve um crescimento log-linear estável, como esperado para $O(n \log n)$, demonstrando maior robustez.
+* Resultado: **Merge Sort supera completamente o Insertion Sort** nesse cenário.
+
+---
+
+### Tempo Estimado – Vetor Aleatório
+
+* **Insertion Sort** apresentou novamente desempenho quadrático, refletindo o comportamento médio do algoritmo.
+* **Merge Sort** teve desempenho consistente e previsível, com vantagem crescente à medida que o tamanho do vetor aumenta.
+* **Conclusão**: Para **dados aleatórios**, o Merge Sort é uma escolha claramente superior.
+
+---
+
+### Tempo de Execução Real (Escala Logarítmica)
+
+As imagens com escala logarítmica reforçam os resultados anteriores:
+
+* O **tempo real de execução** para o `Insertion Sort` cresce rapidamente nos casos decrescente e aleatório.
+* O **Merge Sort** cresce de forma mais controlada e consistente.
+* A diferença de tempo entre os algoritmos se **acentua com vetores maiores**, demonstrando que **o Merge Sort escala melhor**.
+
+---
+
 ## Análise Iterativa da Complexidade
 
 ### Merge Sort
@@ -220,6 +256,10 @@ $$
 
 
 ## Tabela Comparativa
+
+* **Insertion Sort** é preferível apenas para vetores pequenos ou já ordenados.
+* **Merge Sort** é mais eficiente e confiável para grandes volumes de dados e cenários onde a ordem dos dados é imprevisível.
+* A análise confirma as complexidades teóricas:
 
 | Algoritmo          | Melhor Caso   | Caso Médio    | Pior Caso     |
 | ------------------ | ------------- | ------------- | ------------- |
