@@ -166,7 +166,7 @@ $$
 * **Pior caso:** $O(n^2)$
 
 
-### 📊 Tabela Comparativa
+## Tabela Comparativa
 
 | Algoritmo          | Melhor Caso   | Caso Médio    | Pior Caso     |
 | ------------------ | ------------- | ------------- | ------------- |
