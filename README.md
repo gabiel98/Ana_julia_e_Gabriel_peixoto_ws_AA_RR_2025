@@ -87,35 +87,44 @@ $$
 
 ---
 
+Claro! O erro está na formatação do LaTeX no Markdown — ele deve ser feito com crases triplas para blocos de código ou com `\(` e `\)` para inline, e `\[...\]` para blocos.
+
+Aqui está a correção ideal para o seu README.md, com a iteração da recorrência formatada corretamente:
+
+---
+
 ### ✅ Iterando a Recorrência:
 
-1. **1ª iteração**:
+1. **1ª iteração:**
 
-   $$
-   T(n) = 2T\left(\frac{n}{2}\right) + cn
-   $$
+$$
+T(n) = 2T\left(\frac{n}{2}\right) + cn
+$$
 
-2. **2ª iteração**:
+2. **2ª iteração:**
 
-   $$
-   T(n) = 2\left[2T\left(\frac{n}{4}\right) + c\cdot\frac{n}{2}\right] + cn \\
-   = 4T\left(\frac{n}{4}\right) + 2c\cdot\frac{n}{2} + cn \\
-   = 4T\left(\frac{n}{4}\right) + cn + cn = 4T\left(\frac{n}{4}\right) + 2cn
-   $$
+$$
+\begin{aligned}
+T(n) &= 2\left[2T\left(\frac{n}{4}\right) + c \cdot \frac{n}{2}\right] + cn \\
+     &= 4T\left(\frac{n}{4}\right) + 2c \cdot \frac{n}{2} + cn \\
+     &= 4T\left(\frac{n}{4}\right) + 2cn
+\end{aligned}
+$$
 
-3. **kª iteração**:
+3. **kª iteração:**
 
-   $$
-   T(n) = 2^k T\left(\frac{n}{2^k}\right) + kcn
-   $$
+$$
+T(n) = 2^k T\left(\frac{n}{2^k}\right) + kcn
+$$
 
 4. **Parar quando** $\frac{n}{2^k} = 1 \Rightarrow k = \log_2 n$
 
-5. **Substituindo**:
+5. **Substituindo:**
 
-   $$
-   T(n) = n \cdot T(1) + cn \cdot \log_2 n
-   $$
+$$
+T(n) = n \cdot T(1) + cn \cdot \log_2 n
+$$
+
 
 ---
 
