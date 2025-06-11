@@ -68,6 +68,125 @@ Gráficos gerados na pasta graficos/:
 
 ## Insights dos Resultados
 
+
+Claro! Abaixo está o **cálculo completo da função de custo por iteração**, para **Merge Sort** e **Insertion Sort**, incluindo **melhor e pior caso**, escrito em Markdown, pronto para o `README.md`.
+
+---
+
+## 📊 Análise Iterativa da Complexidade
+
+---
+
+### 🔹 Merge Sort
+
+#### Recorrência:
+
+$$
+T(n) = 2T\left(\frac{n}{2}\right) + cn
+$$
+
+---
+
+### ✅ Iterando a Recorrência:
+
+1. **1ª iteração**:
+
+   $$
+   T(n) = 2T\left(\frac{n}{2}\right) + cn
+   $$
+
+2. **2ª iteração**:
+
+   $$
+   T(n) = 2\left[2T\left(\frac{n}{4}\right) + c\cdot\frac{n}{2}\right] + cn \\
+   = 4T\left(\frac{n}{4}\right) + 2c\cdot\frac{n}{2} + cn \\
+   = 4T\left(\frac{n}{4}\right) + cn + cn = 4T\left(\frac{n}{4}\right) + 2cn
+   $$
+
+3. **kª iteração**:
+
+   $$
+   T(n) = 2^k T\left(\frac{n}{2^k}\right) + kcn
+   $$
+
+4. **Parar quando** $\frac{n}{2^k} = 1 \Rightarrow k = \log_2 n$
+
+5. **Substituindo**:
+
+   $$
+   T(n) = n \cdot T(1) + cn \cdot \log_2 n
+   $$
+
+---
+
+### 📌 Conclusão:
+
+* **Melhor caso:** $O(n \log n)$
+* **Pior caso:** $O(n \log n)$
+  *(igual, pois o algoritmo sempre executa o mesmo número de divisões e mesclagens)*
+
+---
+
+### 🔸 Insertion Sort
+
+#### Pseudocódigo simplificado:
+
+```c
+for (int i = 1; i < n; i++) {
+    int chave = arr[i];
+    int j = i - 1;
+    while (j >= 0 && arr[j] > chave) {
+        arr[j + 1] = arr[j];
+        j--;
+    }
+    arr[j + 1] = chave;
+}
+```
+
+---
+
+### ✅ Pior Caso (vetor decrescente)
+
+Cada elemento precisa ser comparado e movido por todo o subvetor anterior:
+
+1. Iteração 1: 1 comparação
+2. Iteração 2: 2 comparações
+3. ...
+4. Iteração $i$: $i$ comparações
+
+$$
+T(n) = 1 + 2 + 3 + \dots + (n - 1) = \sum_{i=1}^{n-1} i = \frac{n(n - 1)}{2}
+$$
+
+---
+
+### ✅ Melhor Caso (vetor ordenado)
+
+O `while (arr[j] > chave)` nunca entra, então só há uma comparação por iteração:
+
+$$
+T(n) = n - 1
+$$
+
+---
+
+### 📌 Conclusão:
+
+* **Melhor caso:** $O(n)$
+* **Pior caso:** $O(n^2)$
+
+---
+
+### 📊 Tabela Comparativa
+
+| Algoritmo          | Melhor Caso   | Caso Médio    | Pior Caso     |
+| ------------------ | ------------- | ------------- | ------------- |
+| **Merge Sort**     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ |
+| **Insertion Sort** | $O(n)$        | $O(n^2)$      | $O(n^2)$      |
+
+---
+
+
 | Algoritmo      | Melhor Caso | Pior Caso  | Espaço | Estável |
 | -------------- | ----------- | ---------- | ------ | ------- |
 | Insertion Sort | O(n)        | O(n²)      | O(1)   | Sim     |
