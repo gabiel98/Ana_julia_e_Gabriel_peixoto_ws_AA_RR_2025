@@ -76,7 +76,7 @@ Gráficos gerados na pasta graficos/:
 | Algoritmo      | Melhor Caso | Pior Caso          | Comparações   | Complexidade                             |
 | -------------- | ----------- | ------------------ | ------------- | ---------------------------------------- |
 | **Insertion**  | $n - 1$     | $\frac{n(n-1)}{2}$ | $O(n^2)$      | Melhor: $O(n)$ <br> Pior/Médio: $O(n^2)$ |
-| **Merge Sort** | $n\log_2 n$ | $n\log_2 n$        | $O(n \log n)$ | Sempre $O(n \log n)$                     |
+| **Merge Sort** | $n\log n$ | $n\log n$        | $O(n \log n)$ | Sempre $O(n \log n)$                     |
 
 
 
