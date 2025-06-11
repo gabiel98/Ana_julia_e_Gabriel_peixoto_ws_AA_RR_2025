@@ -113,7 +113,6 @@ As imagens com escala logarítmica reforçam os resultados anteriores:
 * O **Merge Sort** cresce de forma mais controlada e consistente.
 * A diferença de tempo entre os algoritmos se **acentua com vetores maiores**, demonstrando que **o Merge Sort escala melhor**.
 
----
 
 ## Análise Iterativa da Complexidade
 
