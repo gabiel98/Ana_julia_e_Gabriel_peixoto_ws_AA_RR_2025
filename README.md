@@ -75,7 +75,6 @@ Claro! Abaixo está o **cálculo completo da função de custo por iteração**,
 
 ## 📊 Análise Iterativa da Complexidade
 
----
 
 ### 🔹 Merge Sort
 
@@ -126,7 +125,6 @@ T(n) = n \cdot T(1) + cn \cdot \log_2 n
 $$
 
 
----
 
 ### 📌 Conclusão:
 
@@ -134,7 +132,6 @@ $$
 * **Pior caso:** $O(n \log n)$
   *(igual, pois o algoritmo sempre executa o mesmo número de divisões e mesclagens)*
 
----
 
 ### 🔸 Insertion Sort
 
@@ -152,7 +149,6 @@ for (int i = 1; i < n; i++) {
 }
 ```
 
----
 
 ### ✅ Pior Caso (vetor decrescente)
 
@@ -167,7 +163,6 @@ $$
 T(n) = 1 + 2 + 3 + \dots + (n - 1) = \sum_{i=1}^{n-1} i = \frac{n(n - 1)}{2}
 $$
 
----
 
 ### ✅ Melhor Caso (vetor ordenado)
 
@@ -177,14 +172,12 @@ $$
 T(n) = n - 1
 $$
 
----
 
 ### 📌 Conclusão:
 
 * **Melhor caso:** $O(n)$
 * **Pior caso:** $O(n^2)$
 
----
 
 ### 📊 Tabela Comparativa
 
