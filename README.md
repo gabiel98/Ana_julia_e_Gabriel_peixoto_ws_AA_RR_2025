@@ -22,8 +22,8 @@ Implementar e analisar o algoritmo de ordenação Insertion Sort, avaliando-o co
      - merge_sort.c
 - Entradas : Entradas geradas como sorted, random e reverse entre 1000, 10000, 100000, 500000, 1000000, 2000000, 3000000;
 - Graficos :
-     - graficos.py : Codigo para criação dos graficos.
-     - resultados_graficos : Primeiro arquivo de teste
+     - graficos_tempo
+     - graficos_tempo_estimado
 - Resultados:
      - resultados.csv : Resultados
 - Utils:
