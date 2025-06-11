@@ -120,6 +120,7 @@ Função MERGE(arr, l, m, r, comparacoes):
         j ← j + 1
         k ← k + 1
 ```
+---
 
 #### Recorrência:
 
