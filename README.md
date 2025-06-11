@@ -22,10 +22,10 @@ Implementar e analisar o algoritmo de ordenação Insertion Sort, avaliando-o co
      - merge_sort.c
 - Entradas : Entradas geradas como sorted, random e reverse entre 1000, 10000, 100000, 500000, 1000000, 2000000, 3000000;
 - Graficos :
-     - graficos_tempo
-     - graficos_tempo_estimado
+     - graficos_tempo: tempo_aleatório.png, tempo_decrescente.png, tempo_ordenado.png;
+     - graficos_tempo_estimado : tempo_estimado_aleatório.png, tempo_estimado_decrescente.png, tempo_estimado_ordenado.png;
 - Resultados:
-     - resultados.csv : Resultados
+     - resultados.csv : Resultados com entrada de até 3000000
 - Utils:
      - gerar_entradas.c : Gerador de entradas
      - medir_performance.c : Medir a Performance
@@ -59,11 +59,17 @@ Windows 11 Home 64 bits. Nossa plataforma de testes foi um computador com proces
 
 Arquivo CSV com resultados: resultados/resultados.csv
 
-Gráficos gerados na pasta graficos/:
+Gráficos gerados na pasta graficos/graficos_tempo:
 
-- comparacoes_random.png
-- comparacoes_sorted.png
-- comparacoes_reverse.png
+- tempo_aleatório.png
+- tempo_decrescente.png
+- tempo_ordenado.png
+
+Gráficos gerados na pasta graficos/graficos_tempo_estimado:
+
+- tempo_estimado_aleatório.png
+- tempo_estimado_decrescente.png
+- tempo_estimado_ordenado.png
 
 ## Insights dos Resultados
 
