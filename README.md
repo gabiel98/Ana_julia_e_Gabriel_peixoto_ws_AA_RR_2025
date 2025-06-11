@@ -171,6 +171,7 @@ $$
 * **Pior caso:** $O(n \log n)$
   *(igual, pois o algoritmo sempre executa o mesmo número de divisões e mesclagens)*
 
+---
 
 ### Insertion Sort
 
