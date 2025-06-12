@@ -88,10 +88,13 @@ Os testes foram executados em um ambiente contendo:
 
 <p align="center">
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
-  <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 16px;">
-    1 comparação é igual a 1ms (1 clock). <br> Tempo de clock real.
+  <span style="position: absolute; color: white; font-size: 16px;">
+    1 comparação é igual a 1ms (1 clock).
   </span>
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
+  <span style="position: absolute; color: white; font-size: 16px;">
+    Tempo de clock real.
+  </span>
 </p>
 
 
