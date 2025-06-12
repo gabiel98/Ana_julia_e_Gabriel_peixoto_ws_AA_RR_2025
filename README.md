@@ -91,7 +91,7 @@ Os testes foram executados em um ambiente contendo:
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
 </p>
 
-                              1 comparação é igual a 1ms(1 clock).                                                   Tempo de clock real.
+                         1 comparação é igual a 1ms(1 clock).                                                 Tempo de clock real.
 * **Insertion Sort** tem desempenho muito melhor com vetores ordenados, pois realiza poucas comparações, com custo linear O(n), o que é refletido no gráfico.
 * No **melhor caso**, o **Insertion Sort** aproveita a ordem do vetor e mantém o tempo de execução baixo.
 * Já o **Merge Sort**, mesmo com vetor ordenado, mantém sua complexidade O(n log n) devido às chamadas recursivas e mesclagens, resultando em maior tempo de execução.
