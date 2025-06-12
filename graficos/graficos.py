@@ -100,7 +100,7 @@ def gerar_graficos_teorico(df, output_dir):
         ax.legend(title='Algoritmo', bbox_to_anchor=(1.05, 1), loc='upper left')
 
         plt.tight_layout()
-        filename = os.path.join(output_dir, f"teorico_{tipo.lower()}.png")
+        filename = os.path.join(output_dir, f"comparacoes_{tipo.lower()}.png")
         plt.savefig(filename, bbox_inches='tight')
         plt.close(fig)
         print(f"Salvo: {filename}")
