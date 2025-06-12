@@ -52,7 +52,16 @@ Implementar e analisar o algoritmo de ordenação Insertion Sort, avaliando-o co
    python graficos/graficos.py
 
 ## Ambiente de Execução
-Os testes foram executados em um ambiente contendo Sistema Operacional Windows 11 Pro 64 bits. Nossa plataforma de testes foi um Notebook Lenovo Gamer 3i 82CG0005BR, processador de 7º geração Intel Core i7-10750H de 2.60GHz até 5.00GHz, placa de vídeo NVidia Geforce GTX1650 de 4GB GDDR6, memória RAM de 8GB DDR4, SSD de 512GB, tela de 15.6 polegadas.
+Os testes foram executados em um ambiente contendo:
+
+* **Sistema Operacional**: Windows 11 Pro 64 bits
+* **Plataforma de Testes**: Notebook Lenovo Gamer 3i 82CG0005BR
+* **Especificações**:
+
+  * Processador: Intel Core i7-10750H (2.60GHz até 5.00GHz)
+  * Placa de Vídeo: NVidia Geforce GTX1650 (4GB GDDR6)
+  * Memória RAM: 8GB DDR4
+  * SSD: 512GB
 
 ## Saída
 
