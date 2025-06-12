@@ -133,6 +133,65 @@ As imagens com escala logarítmica reforçam os resultados anteriores:
 
 ## Análise Iterativa da Complexidade
 
+### Insertion Sort
+
+#### Pseudocódigo simplificado:
+
+```c
+for (int i = 1; i < n; i++) {
+    int chave = arr[i];
+    int j = i - 1;
+    while (j >= 0 && arr[j] > chave) {
+        arr[j + 1] = arr[j];
+        j--;
+    }
+    arr[j + 1] = chave;
+}
+```
+
+
+### Pior Caso (vetor decrescente)
+
+Cada elemento precisa ser comparado e movido por todo o subvetor anterior:
+
+1. Iteração 1: 1 comparação
+2. Iteração 2: 2 comparações
+3. ...
+4. Iteração $i$: $i$ comparações
+
+$$
+T(n) = 1 + 2 + 3 + \dots + (n - 1) = \sum_{i=1}^{n-1} i
+$$
+
+Agora, vamos resolver essa soma. A soma dos primeiros $n-1$ números inteiros é uma soma aritmética e tem a fórmula:
+
+$$
+S = \frac{n(n - 1)}{2}
+$$
+
+Portanto, o tempo total de execução no **pior caso** será:
+
+$$
+T(n) = \frac{n(n - 1)}{2}
+$$
+
+
+### Melhor Caso (vetor ordenado)
+
+O `while (arr[j] > chave)` nunca entra, então só há uma comparação por iteração:
+
+$$
+T(n) = n - 1
+$$
+
+
+### Conclusão:
+
+* **Melhor caso:** $O(n)$
+* **Pior caso:** $O(n^2)$
+
+---
+
 ### Merge Sort
 
 #### Pseudocódigo simplificado:
@@ -318,66 +377,6 @@ $$
 * **Melhor caso:** $O(n \log n)$
 * **Pior caso:** $O(n \log n)$
   *(igual, pois o algoritmo sempre executa o mesmo número de divisões e mesclagens)*
-
----
-
-### Insertion Sort
-
-#### Pseudocódigo simplificado:
-
-```c
-for (int i = 1; i < n; i++) {
-    int chave = arr[i];
-    int j = i - 1;
-    while (j >= 0 && arr[j] > chave) {
-        arr[j + 1] = arr[j];
-        j--;
-    }
-    arr[j + 1] = chave;
-}
-```
-
-
-### Pior Caso (vetor decrescente)
-
-Cada elemento precisa ser comparado e movido por todo o subvetor anterior:
-
-1. Iteração 1: 1 comparação
-2. Iteração 2: 2 comparações
-3. ...
-4. Iteração $i$: $i$ comparações
-
-$$
-T(n) = 1 + 2 + 3 + \dots + (n - 1) = \sum_{i=1}^{n-1} i
-$$
-
-Agora, vamos resolver essa soma. A soma dos primeiros $n-1$ números inteiros é uma soma aritmética e tem a fórmula:
-
-$$
-S = \frac{n(n - 1)}{2}
-$$
-
-Portanto, o tempo total de execução no **pior caso** será:
-
-$$
-T(n) = \frac{n(n - 1)}{2}
-$$
-
-
-### Melhor Caso (vetor ordenado)
-
-O `while (arr[j] > chave)` nunca entra, então só há uma comparação por iteração:
-
-$$
-T(n) = n - 1
-$$
-
-
-### Conclusão:
-
-* **Melhor caso:** $O(n)$
-* **Pior caso:** $O(n^2)$
-
 
 ## Tabela Comparativa
 
