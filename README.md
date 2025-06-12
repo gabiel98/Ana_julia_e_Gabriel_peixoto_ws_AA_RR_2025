@@ -27,7 +27,7 @@ Para cada entrada é feita somente 1 repetição;
      - graficos_tempo: tempo_aleatório.png, tempo_decrescente.png, tempo_ordenado.png;
      - graficos_tempo_estimado : tempo_estimado_aleatório.png, tempo_estimado_decrescente.png, tempo_estimado_ordenado.png;
 - Resultados:
-     - resultados.csv : Resultados com entrada de até 3000000
+     - resultados.csv : Resultados com entrada de até 2000000
 - Utils:
      - gerar_entradas.c : Gerador de entradas
      - medir_performance.c : Medir a Performance
@@ -88,12 +88,12 @@ Os testes foram executados em um ambiente contendo:
 
 <p align="center">
   <div style="display: inline-block; text-align: center; width: 48%; margin-right: 2%;">
-    <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png" alt="Gráfico 1" width="100%">
+    <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png"  alt="Gráfico 1" width="48%" style="display: inline-block;">
     <br>
     <span style="font-size: 14px; font-weight: bold;">1 comparação é igual a 1ms (1 clock)</span>
   </div>
   <div style="display: inline-block; text-align: center; width: 48%;">
-    <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png" alt="Gráfico 2" width="100%">
+    <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png"  alt="Gráfico 2" width="48%" style="display: inline-block;">
     <br>
     <span style="font-size: 14px; font-weight: bold;">Tempo de clock real</span>
   </div>
