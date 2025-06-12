@@ -25,7 +25,7 @@ Para cada entrada é feita somente 1 repetição;
 - Entradas : Entradas geradas como sorted, random e reverse entre 1000, 10000, 100000, 500000, 1000000, 2000000;
 - Graficos :
      - graficos_tempo: tempo_aleatório.png, tempo_decrescente.png, tempo_ordenado.png;
-     - graficos_tempo_estimado : tempo_estimado_aleatório.png, tempo_estimado_decrescente.png, tempo_estimado_ordenado.png;
+     - graficos_tempo_comparacao : comparacoes_aleatório.png, comparacoes_decrescente.png, comparacoes_ordenado.png;
 - Resultados:
      - resultados.csv : Resultados com entrada de até 2000000
 - Utils:
@@ -75,11 +75,11 @@ Os testes foram executados em um ambiente contendo:
     * tempo\_aleatório.png
     * tempo\_decrescente.png
     * tempo\_ordenado.png
-  * **Pasta `graficos/graficos_tempo_estimado`**:
+  * **Pasta `graficos/graficos_tempo_comparacao`**:
 
-    * tempo\_estimado\_aleatório.png
-    * tempo\_estimado\_decrescente.png
-    * tempo\_estimado\_ordenado.png
+    * comparacoes\_aleatório.png
+    * comparacoes\_decrescente.png
+    * comparacoes\_ordenado.png
 
 ## Insights dos Resultados
 
@@ -87,7 +87,7 @@ Os testes foram executados em um ambiente contendo:
 ### Tempo Estimado – Vetor Ordenado
 
 <p align="center">
-  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_comparacao/comparacao_ordenado.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
+  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_comparacao/comparacoes_ordenado.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
 </p>
 
@@ -102,7 +102,7 @@ Os testes foram executados em um ambiente contendo:
 ### Tempo Estimado – Vetor em Ordem Decrescente
 
 <p align="center">
-  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/comparacao_decrescente.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
+  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_comparacao/comparacoes_decrescente.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_decrescente.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
 </p>
 
@@ -116,7 +116,7 @@ Os testes foram executados em um ambiente contendo:
 ### Tempo Estimado – Vetor Aleatório
 
 <p align="center">
-  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/comparacao_aleatório.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
+  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_comparacao/comparacoes_aleatório.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_aleatório.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
 </p>
 
