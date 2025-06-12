@@ -15,6 +15,8 @@ Implementar e analisar o algoritmo de ordenação Insertion Sort, avaliando-o co
 - Ordenado decrescente (`reverse`)
 - Aleatório (`random`)
 
+Para cada entrada é feita somente 1 repetição;
+
 ## Estrutura de Diretórios
 
 - Algoritmos :
