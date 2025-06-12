@@ -22,7 +22,7 @@ Para cada entrada é feita somente 1 repetição;
 - Algoritmos :
      - insertion_sort.c
      - merge_sort.c
-- Entradas : Entradas geradas como sorted, random e reverse entre 1000, 10000, 100000, 500000, 1000000, 2000000, 3000000;
+- Entradas : Entradas geradas como sorted, random e reverse entre 1000, 10000, 100000, 500000, 1000000, 2000000;
 - Graficos :
      - graficos_tempo: tempo_aleatório.png, tempo_decrescente.png, tempo_ordenado.png;
      - graficos_tempo_estimado : tempo_estimado_aleatório.png, tempo_estimado_decrescente.png, tempo_estimado_ordenado.png;
