@@ -45,7 +45,7 @@ Para cada entrada é feita somente 1 repetição;
 
 3. **Executar os algoritmos e salvar os dados**
    ```bash
-   gcc utils/medir_performance.c algoritmos/*.c -o medir
+   gcc utils/medir_performance.c algoritmos/insertion_sort.c algoritmos/merge_sort.c -o medir
    ./medir
 
 4. **Gerar os gráficos (requer Python)**
@@ -87,7 +87,7 @@ Os testes foram executados em um ambiente contendo:
 ### Tempo Estimado – Vetor Ordenado
 
 <p align="center">
-  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
+  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_comparacao/tempo_estimado_ordenado.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
 </p>
 
