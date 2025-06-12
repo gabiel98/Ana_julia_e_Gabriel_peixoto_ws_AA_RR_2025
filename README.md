@@ -80,10 +80,10 @@ Gráficos gerados na pasta graficos/graficos_tempo_estimado:
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
 </p>
 
-* **Insertion Sort** apresentou desempenho significativamente melhor nesse cenário.
-* Como esperado, no **melhor caso**, o `Insertion Sort` executa apenas comparações mínimas, com custo linear $O(n)$.
-* Já o **Merge Sort**, mesmo com o vetor ordenado, mantém sua complexidade $O(n \log n)$, já que realiza chamadas recursivas e mesclagens de qualquer forma.
-* Portanto, **para vetores ordenados**, o `Insertion Sort` é mais eficiente em tempo e recurso.
+* **Insertion Sort** tem desempenho muito melhor com vetores ordenados, pois realiza poucas comparações, com custo linear O(n), o que é refletido no gráfico.
+* No **melhor caso**, o **Insertion Sort** aproveita a ordem do vetor e mantém o tempo de execução baixo.
+* Já o **Merge Sort**, mesmo com vetor ordenado, mantém sua complexidade O(n log n) devido às chamadas recursivas e mesclagens, resultando em maior tempo de execução.
+* **Conclusão:** Para vetores ordenados, **Insertion Sort** é mais eficiente em tempo e recursos.
 
 ---
 
