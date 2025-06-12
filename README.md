@@ -65,19 +65,19 @@ Os testes foram executados em um ambiente contendo:
 
 ## Saída
 
-Arquivo CSV com resultados: resultados/resultados.csv
+* **Arquivo CSV com resultados**: `resultados/resultados.csv`
+* **Gráficos gerados**:
 
-Gráficos gerados na pasta graficos/graficos_tempo:
+  * **Pasta `graficos/graficos_tempo`**:
 
-- tempo_aleatório.png
-- tempo_decrescente.png
-- tempo_ordenado.png
+    * tempo\_aleatório.png
+    * tempo\_decrescente.png
+    * tempo\_ordenado.png
+  * **Pasta `graficos/graficos_tempo_estimado`**:
 
-Gráficos gerados na pasta graficos/graficos_tempo_estimado:
-
-- tempo_estimado_aleatório.png
-- tempo_estimado_decrescente.png
-- tempo_estimado_ordenado.png
+    * tempo\_estimado\_aleatório.png
+    * tempo\_estimado\_decrescente.png
+    * tempo\_estimado\_ordenado.png
 
 ## Insights dos Resultados
 
