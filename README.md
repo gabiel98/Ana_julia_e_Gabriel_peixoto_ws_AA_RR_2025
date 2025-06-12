@@ -178,6 +178,9 @@ $$
 T(n) = \frac{n(n - 1)}{2}
 $$
 
+$$
+T(n)= \frac{n^2 - n}{2}
+$$
 
 ### Melhor Caso (vetor ordenado)
 
