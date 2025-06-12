@@ -106,6 +106,7 @@ Os testes foram executados em um ambiente contendo:
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_decrescente.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
 </p>
 
+                         1 comparação é igual a 1ms(1 clock).                                    Tempo de clock real.
 * O *Insertion Sort* teve o pior desempenho possível, com tempo de execução exponencial, confirmando sua complexidade $O(n^2)$ no pior caso.
 * O *Merge Sort* manteve um crescimento log-linear estável, como esperado para $O(n \log n)$, demonstrando maior robustez.
 * **Resultado**: O *Merge Sort* supera completamente o *Insertion Sort* nesse cenário.
@@ -119,6 +120,7 @@ Os testes foram executados em um ambiente contendo:
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_aleatório.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
 </p>
 
+                         1 comparação é igual a 1ms(1 clock).                                    Tempo de clock real.
 * **Insertion Sort** apresentou novamente desempenho quadrático, refletindo o comportamento médio do algoritmo.
 * **Merge Sort** teve desempenho consistente e previsível, com vantagem crescente à medida que o tamanho do vetor aumenta.
 * **Conclusão**: Para **dados aleatórios**, o Merge Sort é uma escolha claramente superior.
