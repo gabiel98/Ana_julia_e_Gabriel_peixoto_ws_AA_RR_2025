@@ -192,34 +192,124 @@ $$
 
 ***Não esta responsivo no celular***
 
-1. **1ª iteração:**
+Claro! Aqui estão mais iterações da resolução da recorrência $T(n) = 2T\left(\frac{n}{2}\right) + cn$, para que você possa visualizar o padrão que surge a cada iteração.
+
+### Iterações Adicionais
+
+#### 1ª Iteração:
 
 $$
 T(n) = 2T\left(\frac{n}{2}\right) + cn
 $$
 
-2. **2ª iteração:**
+#### 2ª Iteração:
+
+Substituímos $T\left(\frac{n}{2}\right)$ por $2T\left(\frac{n}{4}\right) + c\frac{n}{2}$:
 
 $$
-\begin{aligned}
-T(n) &= 2\left[2T\left(\frac{n}{4}\right) + c \cdot \frac{n}{2}\right] + cn \\
-     &= 4T\left(\frac{n}{4}\right) + 2c \cdot \frac{n}{2} + cn \\
-     &= 4T\left(\frac{n}{4}\right) + 2cn
-\end{aligned}
+T(n) = 2\left[2T\left(\frac{n}{4}\right) + c \cdot \frac{n}{2}\right] + cn
 $$
 
-3. **kª iteração:**
-
 $$
-T(n) = 2^k T\left(\frac{n}{2^k}\right) + kcn
+T(n) = 4T\left(\frac{n}{4}\right) + 2c \cdot \frac{n}{2} + cn
 $$
 
-4. **Parar quando** $\frac{n}{2^k} = 1 \Rightarrow k = \log_2 n$
+$$
+T(n) = 4T\left(\frac{n}{4}\right) + 2cn
+$$
 
-5. **Substituindo:**
+#### 3ª Iteração:
+
+Agora, substituímos $T\left(\frac{n}{4}\right)$ por $2T\left(\frac{n}{8}\right) + c \cdot \frac{n}{4}$:
 
 $$
-T(n) = n \cdot T(1) + cn \cdot \log_2 n
+T(n) = 4\left[2T\left(\frac{n}{8}\right) + c \cdot \frac{n}{4}\right] + 2cn
+$$
+
+$$
+T(n) = 8T\left(\frac{n}{8}\right) + 4c \cdot \frac{n}{4} + 2cn
+$$
+
+$$
+T(n) = 8T\left(\frac{n}{8}\right) + cn + 2cn
+$$
+
+$$
+T(n) = 8T\left(\frac{n}{8}\right) + 3cn
+$$
+
+#### 4ª Iteração:
+
+Substituímos $T\left(\frac{n}{8}\right)$ por $2T\left(\frac{n}{16}\right) + c \cdot \frac{n}{8}$:
+
+$$
+T(n) = 8\left[2T\left(\frac{n}{16}\right) + c \cdot \frac{n}{8}\right] + 3cn
+$$
+
+$$
+T(n) = 16T\left(\frac{n}{16}\right) + 8c \cdot \frac{n}{8} + 3cn
+$$
+
+$$
+T(n) = 16T\left(\frac{n}{16}\right) + cn + 3cn
+$$
+
+$$
+T(n) = 16T\left(\frac{n}{16}\right) + 4cn
+$$
+
+#### 5ª Iteração:
+
+Substituímos $T\left(\frac{n}{16}\right)$ por $2T\left(\frac{n}{32}\right) + c \cdot \frac{n}{16}$:
+
+$$
+T(n) = 16\left[2T\left(\frac{n}{32}\right) + c \cdot \frac{n}{16}\right] + 4cn
+$$
+
+$$
+T(n) = 32T\left(\frac{n}{32}\right) + 16c \cdot \frac{n}{16} + 4cn
+$$
+
+$$
+T(n) = 32T\left(\frac{n}{32}\right) + cn + 4cn
+$$
+
+$$
+T(n) = 32T\left(\frac{n}{32}\right) + 5cn
+$$
+
+### Geralizando o Padrão
+
+Após $k$ iterações, temos a forma geral da recorrência:
+
+$$
+T(n) = 2^k T\left(\frac{n}{2^k}\right) + k \cdot cn
+$$
+
+### Parando a Recursão
+
+A recursão para quando $\frac{n}{2^k} = 1$, ou seja, $k = \log_2 n$. Substituindo $k = \log_2 n$:
+
+$$
+T(n) = 2^{\log_2 n} T(1) + \log_2 n \cdot cn
+$$
+
+$$
+T(n) = n T(1) + cn \log_2 n
+$$
+
+### Passo 2: Conclusão
+
+Sabemos que $T(1)$ é uma constante, então a solução para $T(n)$ será:
+
+$$
+T(n) = O(n) + O(n \log n)
+$$
+
+Portanto, a **complexidade assintótica** de $T(n)$ é:
+
+$$
+T(n) = O(n \log n)
 $$
 
 
