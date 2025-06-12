@@ -227,23 +227,7 @@ $$
 T(n) = 4T\left(\frac{n}{4}\right) + cn + cn
 $$
 
-3. **Terceira Substituição** (para $T\left(\frac{n}{4}\right)$):
-
-$$
-T\left(\frac{n}{4}\right) = 2T\left(\frac{n}{8}\right) + c\left(\frac{n}{4}\right)
-$$
-
-Substituindo:
-
-$$
-T(n) = 8T\left(\frac{n}{8}\right) + 2cn + cn + cn
-$$
-
-$$
-T(n) = 8T\left(\frac{n}{8}\right) + 3cn
-$$
-
-4. **Geralmente, após $k$ substituições**:
+3. **Geralmente, após $k$ substituições**:
 
 $$
 T(n) = 2^k T\left(\frac{n}{2^k}\right) + k \cdot cn
