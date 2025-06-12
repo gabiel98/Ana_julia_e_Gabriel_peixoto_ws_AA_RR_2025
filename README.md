@@ -135,18 +135,19 @@ As imagens com escala logarítmica reforçam os resultados anteriores:
 
 ### Insertion Sort
 
-#### Pseudocódigo simplificado:
+#### Pseudocódigo:
 
 ```c
-for (int i = 1; i < n; i++) {
-    int chave = arr[i];
-    int j = i - 1;
-    while (j >= 0 && arr[j] > chave) {
-        arr[j + 1] = arr[j];
-        j--;
-    }
-    arr[j + 1] = chave;
-}
+Algoritmo InsertionSort(A):
+    Para i de 1 até tamanho(A) - 1 faça:
+        chave ← A[i]                   
+        j ← i - 1                       
+        Enquanto j ≥ 0 e A[j] > chave faça:
+            A[j + 1] ← A[j]            
+            j ← j - 1                  
+        FimEnquanto
+        A[j + 1] ← chave               
+FimAlgoritmo
 ```
 
 
