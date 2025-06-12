@@ -90,7 +90,7 @@ Os testes foram executados em um ambiente contendo:
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
   <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
 </p>
-<p align="center">
+<p>
   <span style="display: inline-block;">1 comparação é igual a 1ms(1 clock)</span>
   <span style="display: inline-block;">Tempo de clock real.</span>
 </p>
