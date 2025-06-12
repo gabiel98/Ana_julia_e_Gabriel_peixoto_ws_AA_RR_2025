@@ -87,7 +87,7 @@ Os testes foram executados em um ambiente contendo:
 ### Tempo Estimado – Vetor Ordenado
 
 <p align="center">
-  <div style="display: flex; justify-content: space-between; width: 100%; max-width: 800px;">
+  <div style="display: flex; justify-content: space-between; width: 50%;">
     <div style="text-align: center; width: 48%;">
       <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png" alt="Gráfico 1" width="50%">
       <br>
