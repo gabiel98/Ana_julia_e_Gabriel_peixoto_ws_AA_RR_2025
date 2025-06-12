@@ -96,7 +96,7 @@ Gráficos gerados na pasta graficos/graficos_tempo_estimado:
 
 * O *Insertion Sort* teve o pior desempenho possível, com tempo de execução exponencial, confirmando sua complexidade $O(n^2)$ no pior caso.
 * O *Merge Sort* manteve um crescimento log-linear estável, como esperado para $O(n \log n)$, demonstrando maior robustez.
-**Resultado**: O *Merge Sort* supera completamente o *Insertion Sort* nesse cenário.
+* **Resultado**: O *Merge Sort* supera completamente o *Insertion Sort* nesse cenário.
 
 ---
 
