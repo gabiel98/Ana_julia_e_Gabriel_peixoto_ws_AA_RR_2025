@@ -87,17 +87,22 @@ Os testes foram executados em um ambiente contendo:
 ### Tempo Estimado – Vetor Ordenado
 
 <p align="center">
-  <div style="display: inline-block; text-align: center; width: 48%; margin-right: 2%;">
-    <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png"  alt="Gráfico 1" width="48%" style="display: inline-block;">
-    <br>
-    <span style="font-size: 14px; font-weight: bold;">1 comparação é igual a 1ms (1 clock)</span>
-  </div>
-  <div style="display: inline-block; text-align: center; width: 48%;">
-    <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png"  alt="Gráfico 2" width="48%" style="display: inline-block;">
-    <br>
-    <span style="font-size: 14px; font-weight: bold;">Tempo de clock real</span>
+  <div style="display: flex; justify-content: space-between; width: 100%; max-width: 800px;">
+    <!-- Imagem da esquerda -->
+    <div style="text-align: center; width: 48%;">
+      <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png" alt="Gráfico 1" width="100%">
+      <br>
+      <span style="font-size: 14px; font-weight: bold;">1 comparação é igual a 1ms (1 clock)</span>
+    </div>
+
+    <div style="text-align: center; width: 48%;">
+      <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png" alt="Gráfico 2" width="100%">
+      <br>
+      <span style="font-size: 14px; font-weight: bold;">Tempo de clock real</span>
+    </div>
   </div>
 </p>
+
 
 
 * 1 comparação é igual a 1ms(1 clock). * Tempo de clock real.
