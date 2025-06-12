@@ -348,7 +348,19 @@ Cada elemento precisa ser comparado e movido por todo o subvetor anterior:
 4. Iteração $i$: $i$ comparações
 
 $$
-T(n) = 1 + 2 + 3 + \dots + (n - 1) = \sum_{i=1}^{n-1} i = \frac{n(n - 1)}{2}
+T(n) = 1 + 2 + 3 + \dots + (n - 1) = \sum_{i=1}^{n-1} i
+$$
+
+Agora, vamos resolver essa soma. A soma dos primeiros $n-1$ números inteiros é uma soma aritmética e tem a fórmula:
+
+$$
+S = \frac{n(n - 1)}{2}
+$$
+
+Portanto, o tempo total de execução no **pior caso** será:
+
+$$
+T(n) = \frac{n(n - 1)}{2}
 $$
 
 
