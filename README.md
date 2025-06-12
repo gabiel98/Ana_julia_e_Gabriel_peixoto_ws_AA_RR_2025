@@ -87,14 +87,16 @@ Os testes foram executados em um ambiente contendo:
 ### Tempo Estimado – Vetor Ordenado
 
 <p align="center">
-  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
-  <span style="position: absolute; color: white; font-size: 16px;">
-    1 comparação é igual a 1ms (1 clock).
-  </span>
-  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
-  <span style="position: absolute; color: white; font-size: 16px;">
-    Tempo de clock real.
-  </span>
+  <div style="display: inline-block; text-align: center; width: 48%; margin-right: 2%;">
+    <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png" alt="Gráfico 1" width="100%">
+    <br>
+    <span style="font-size: 14px; font-weight: bold;">1 comparação é igual a 1ms (1 clock)</span>
+  </div>
+  <div style="display: inline-block; text-align: center; width: 48%;">
+    <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png" alt="Gráfico 2" width="100%">
+    <br>
+    <span style="font-size: 14px; font-weight: bold;">Tempo de clock real</span>
+  </div>
 </p>
 
 
