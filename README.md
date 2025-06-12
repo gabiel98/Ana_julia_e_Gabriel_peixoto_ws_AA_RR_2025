@@ -201,38 +201,19 @@ $$
 2. **2ª iteração:**
 
 $$
-T\left(\frac{n}{2}\right) = 2T\left(\frac{n}{4}\right) + c\left(\frac{n}{2}\right)
+\begin{aligned}
+T(n) &= 2\left[2T\left(\frac{n}{4}\right) + c \cdot \frac{n}{2}\right] + cn \\
+     &= 4T\left(\frac{n}{4}\right) + 2c \cdot \frac{n}{2} + cn \\
+     &= 4T\left(\frac{n}{4}\right) + 2cn
+\end{aligned}
 $$
 
-Substituindo na equação original:
+3. **kª iteração:**
 
 $$
-T(n) = 2\left[2T\left(\frac{n}{4}\right) + c\left(\frac{n}{2}\right)\right] + cn
+T(n) = 2^k T\left(\frac{n}{2^k}\right) + kcn
 $$
 
-$$
-T(n) = 4T\left(\frac{n}{4}\right) + 2c\left(\frac{n}{2}\right) + cn
-$$
-
-$$
-T(n) = 4T\left(\frac{n}{4}\right) + cn + cn
-$$
-
-3. **Terceira Substituição** (para $T\left(\frac{n}{4}\right)$):
-
-$$
-T\left(\frac{n}{4}\right) = 2T\left(\frac{n}{8}\right) + c\left(\frac{n}{4}\right)
-$$
-
-Substituindo:
-
-$$
-T(n) = 8T\left(\frac{n}{8}\right) + 2cn + cn + cn
-$$
-
-$$
-T(n) = 8T\left(\frac{n}{8}\right) + 3cn
-$$
 4. **Parar quando** $\frac{n}{2^k} = 1 \Rightarrow k = \log_2 n$
 
 5. **Substituindo:**
@@ -240,7 +221,6 @@ $$
 $$
 T(n) = n \cdot T(1) + cn \cdot \log_2 n
 $$
-
 
 
 ### Conclusão:
