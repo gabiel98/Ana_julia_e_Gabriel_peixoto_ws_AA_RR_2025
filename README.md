@@ -407,8 +407,7 @@ $$
 
 ## Slide
 
-[Link para Slide][Slide]
-[Slide]: https://www.canva.com/design/DAGplJmIlUk/6uFzYVPL7UbTwz1_slFxkg/edit?utm_content=DAGplJmIlUk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+- [Slide](https://www.canva.com/design/DAGplJmIlUk/6uFzYVPL7UbTwz1_slFxkg/edit?utm_content=DAGplJmIlUk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
 ## Autores
 
