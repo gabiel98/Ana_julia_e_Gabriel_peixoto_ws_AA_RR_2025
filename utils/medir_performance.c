@@ -84,21 +84,17 @@ void testar_algoritmo(const char *arquivo, const char *algoritmo, FILE *saida) {
     sscanf(arquivo, "entradas/entrada_%d_%s[^.].txt", &tamanho, tipo);
 
     fprintf(saida, "%s,%s,%d,%lld,%.6f\n", algoritmo, tipo, tamanho, comparacoes, tempo);
-    fflush(saida);  // forca gravacao no disco
+    fflush(saida);  
 
     free(original);
     free(copia);
-
-    printf("Concluido: %s em %s\nComparacoes: %lld\nTempo: %.10f s\n\n",
-           algoritmo, arquivo, comparacoes, tempo);
 }
 
 int main() {
     const char *algoritmos[] = { "insertion", "merge" };
     const char *tipos[] = { "sorted", "random", "reverse" };
-    int tamanhos[] = { 1000, 10000, 100000, 500000, 1000000, 2000000};
+    int tamanhos[] = {1000, 10000, 100000, 500000, 1000000, 2000000};
 
-    printf("Iniciando testes de performance dos algoritmos...\n");
     FILE *saida = fopen("resultados/resultados.csv", "w");
     if (!saida) {
         perror("Erro ao abrir arquivo CSV");
@@ -112,9 +108,7 @@ int main() {
             for (int s = 0; s < 6; s++) {
                 char nome_arquivo[100];
                 sprintf(nome_arquivo, "entradas/entrada_%d_%s.txt", tamanhos[s], tipos[t]);
-                printf("Rodando %s em %s...\n", algoritmos[a], nome_arquivo);
                 testar_algoritmo(nome_arquivo, algoritmos[a], saida);
-                printf("----------\n");
             }
         }
     }
