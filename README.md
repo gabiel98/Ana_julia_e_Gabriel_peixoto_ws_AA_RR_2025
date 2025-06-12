@@ -75,7 +75,10 @@ Gráficos gerados na pasta graficos/graficos_tempo_estimado:
 
 ### Tempo Estimado – Vetor Ordenado
 
-<img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png" alt="Gráfico de Desempenho" width="600">
+<p align="center">
+  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_ordenado.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
+  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_ordenado.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
+</p>
 
 * **Insertion Sort** apresentou desempenho significativamente melhor nesse cenário.
 * Como esperado, no **melhor caso**, o `Insertion Sort` executa apenas comparações mínimas, com custo linear $O(n)$.
@@ -86,7 +89,10 @@ Gráficos gerados na pasta graficos/graficos_tempo_estimado:
 
 ### Tempo Estimado – Vetor em Ordem Decrescente
 
-<img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_decrescente.png" alt="Gráfico de Desempenho" width="600">
+<p align="center">
+  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_decrescente.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
+  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_decrescente.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
+</p>
 
 
 * **Insertion Sort** teve o pior desempenho possível, com crescimento exponencial de tempo. Isso confirma sua complexidade $O(n^2)$ no pior caso.
@@ -97,7 +103,10 @@ Gráficos gerados na pasta graficos/graficos_tempo_estimado:
 
 ### Tempo Estimado – Vetor Aleatório
 
-<img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_aleatório.png" alt="Gráfico de Desempenho" width="600">
+<p align="center">
+  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo_estimado/tempo_estimado_aleatório.png" alt="Gráfico 1" width="48%" style="display: inline-block;">
+  <img src="https://github.com/gabiel98/Ana_julia_e_Gabriel_peixoto_ws_AA_RR_2025/blob/main/graficos/graficos_tempo/tempo_aleatório.png" alt="Gráfico 2" width="48%" style="display: inline-block;">
+</p>
 
 * **Insertion Sort** apresentou novamente desempenho quadrático, refletindo o comportamento médio do algoritmo.
 * **Merge Sort** teve desempenho consistente e previsível, com vantagem crescente à medida que o tamanho do vetor aumenta.
